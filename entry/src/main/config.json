@@ -53,7 +53,6 @@
 					"pages/start/start",
 					"common/components/listbutton/listbutton",
 					"pages/basiccontroll/basiccontroll",
-					"common/components/bottombutton/bottombutton",
 					"pages/my/my"
 				],
 				"name":".MainAbility",
