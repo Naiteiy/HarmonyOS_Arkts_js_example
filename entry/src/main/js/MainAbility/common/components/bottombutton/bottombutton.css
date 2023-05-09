@@ -1,0 +1,34 @@
+.container{
+    height: 10%;
+
+    align-items: center;
+    background-color: #ffefefef;
+
+}
+.click {
+    width: 51%;
+    align-items: center;
+    text-align: center;
+}
+.click-img {
+    width: 60px;
+    height: 60px;
+    margin-left:40%
+}
+.margin{
+    width: 100px;
+}
+.text{
+    font-size: 30px;
+    text-align: left;
+    position: absolute;
+    margin-left: 20%;
+    margin-top: 70%;
+}
+.text1{
+    font-size: 30px;
+    text-align: left;
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 70%;
+}

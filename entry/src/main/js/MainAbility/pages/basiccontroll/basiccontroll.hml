@@ -1,0 +1,11 @@
+<element name='listbutton' src='../../common/components/listbutton/listbutton.hml'></element>
+<div class="container">
+    <div class="header">
+        <text class="title">基础管理</text>
+    </div>
+
+
+    <div class="footer">
+        <button style="width: 100%;height: 6%;border-radius: 0px;">首页</button>
+    </div>
+</div>

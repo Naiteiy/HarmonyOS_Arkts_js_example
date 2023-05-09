@@ -1,0 +1,29 @@
+.container{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+
+}
+image{
+    height: 100px;
+    width: 100px;
+}
+button{
+    background-color: lightgray;
+    z-index: -1;
+    height: 100%;
+    width: 80%;
+    border-radius: 18px;
+    text-color: black;
+    font-size: 50px;
+    text-align: center;
+}
+.left{
+    z-index: 10;
+    width: 20%;
+    position: absolute;
+    left: 5%;
+    margin: auto;
+}

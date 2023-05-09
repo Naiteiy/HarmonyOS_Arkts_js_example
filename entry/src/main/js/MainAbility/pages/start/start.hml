@@ -1,0 +1,16 @@
+<element name='listbutton' src='../../common/components/listbutton/listbutton.hml'></element>
+<element name='bottombutton' src='../../common/components/bottombutton/bottombutton.hml'></element>
+<div class="container">
+    <div class="header">
+        <text class="title">防汛物资管理信息系统</text>
+    </div>
+
+        <listbutton class="button1" imgsrc="/common/img/basic.png" page="basiccontroll" buttontext="基础管理"></listbutton>
+        <listbutton class="button1" imgsrc="/common/img/inandout.png" page="index" buttontext="出入库管理"></listbutton>
+        <listbutton class="button1" imgsrc="/common/img/analyse.png" page="index" buttontext="数据分析"></listbutton>
+        <listbutton class="button1" imgsrc="/common/img/list.png" page="index" buttontext="报表管理"></listbutton>
+
+<div class="footer">
+        <bottombutton></bottombutton>
+</div>
+</div>
