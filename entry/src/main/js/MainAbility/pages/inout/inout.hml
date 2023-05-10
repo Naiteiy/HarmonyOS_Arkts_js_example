@@ -1,0 +1,14 @@
+<list style="width: 100%;" id="mylist">
+    <list-item-group for="listgroup in list" id="{{listgroup.value}}" ongroupcollapse="collapse" ongroupexpand="expand">
+        <list-item type="item" style="background-color:#FFF0F5;height:95px;">
+            <div class="item-group-child">
+                <text>One---{{listgroup.value}}</text>
+            </div>
+        </list-item>
+        <list-item type="item" style="background-color: #87CEFA;height:145px;" primary="true">
+            <div class="item-group-child">
+                <text>Primary---{{listgroup.value}}</text>
+            </div>
+        </list-item>
+    </list-item-group>
+</list>

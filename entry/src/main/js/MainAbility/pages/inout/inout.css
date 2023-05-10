@@ -1,0 +1,16 @@
+.doc-page {
+    flex-direction: column;
+    background-color: #F1F3F5;
+}
+list-item{
+    margin-top:30px;
+}
+.top-list-item {
+    width:100%;
+    background-color:#D4F2E7;
+}
+.item-group-child {
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}

@@ -1,66 +1,68 @@
 {
-	"app":{
-		"vendor":"example",
-		"bundleName":"com.example.myapplication",
-		"version":{
-			"code":1000000,
-			"name":"1.0.0"
-		}
-	},
-	"deviceConfig":{},
-	"module":{
-		"mainAbility":".MainAbility",
-		"deviceType":[
-			"phone"
-		],
-		"abilities":[
-			{
-				"skills":[
-					{
-						"entities":[
-							"entity.system.home"
-						],
-						"actions":[
-							"action.system.home"
-						]
-					}
-				],
-				"orientation":"unspecified",
-				"visible":true,
-				"srcPath":"MainAbility",
-				"name":".MainAbility",
-				"srcLanguage":"js",
-				"icon":"$media:icon",
-				"description":"$string:MainAbility_desc",
-				"formsEnabled":false,
-				"label":"$string:MainAbility_label",
-				"type":"page",
-				"launchType":"standard"
-			}
-		],
-		"distro":{
-			"moduleType":"entry",
-			"installationFree":false,
-			"deliveryWithInstall":true,
-			"moduleName":"entry"
-		},
-		"package":"com.example.myapplication",
-		"name":".entry",
-		"js":[
-			{
-				"pages":[
-					"pages/index/index",
-					"pages/start/start",
-					"common/components/listbutton/listbutton",
-					"pages/basiccontroll/basiccontroll",
-					"pages/my/my"
-				],
-				"name":".MainAbility",
-				"window":{
-					"designWidth":720,
-					"autoDesignWidth":false
-				}
-			}
-		]
-	}
+  "app": {
+    "vendor": "example",
+    "bundleName": "com.example.myapplication",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "mainAbility": ".MainAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "visible": true,
+        "srcPath": "MainAbility",
+        "name": ".MainAbility",
+        "srcLanguage": "js",
+        "icon": "$media:icon",
+        "description": "$string:MainAbility_desc",
+        "formsEnabled": false,
+        "label": "$string:MainAbility_label",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ],
+    "distro": {
+      "moduleType": "entry",
+      "installationFree": false,
+      "deliveryWithInstall": true,
+      "moduleName": "entry"
+    },
+    "package": "com.example.myapplication",
+    "name": ".entry",
+    "js": [
+      {
+        "pages": [
+          "pages/index/index",
+          "pages/start/start",
+          "common/components/listbutton/listbutton",
+          "common/components/addbutton/addbutton",
+          "pages/basiccontroll/basiccontroll",
+          "pages/my/my",
+          "pages/inout/inout"
+        ],
+        "name": ".MainAbility",
+        "window": {
+          "designWidth": 720,
+          "autoDesignWidth": false
+        }
+      }
+    ]
+  }
 }

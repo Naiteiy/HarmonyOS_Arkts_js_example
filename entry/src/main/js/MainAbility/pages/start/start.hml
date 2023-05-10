@@ -35,15 +35,15 @@
     </div>
     <div class="footer">
 
-       <div class="click" onclick="ifclick">
+       <div class="click1" id="click1" onclick="ifclick">
             <image class="click-img" src="{{ clickImage }}" focusable="true"></image>
         </div>
         <text class="text">首页</text>
-        <div class="click" onclick="ifclick1">
+        <div class="click2" id="click2" onclick="ifclick1">
             <image class="click-img" src="{{ clickImage1 }}" focusable="true"></image>
         </div>
         <text class="text1">我的</text>
     </div>
 
-
+,
 </div>

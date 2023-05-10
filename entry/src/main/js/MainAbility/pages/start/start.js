@@ -27,7 +27,7 @@ export default {
     },
     ifclick1() {
 
-        if (this.isPressed = true) {
+        if (this.isPressed1 = true) {
 
             this.clickImage1 = "/common/img/my_fill.png";
             this.clickImage = '/common//img/index.png';
@@ -45,5 +45,6 @@ export default {
     logout(){
         router.push({url:"pages/index/index"});
     }
+
 
 }

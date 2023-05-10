@@ -19,7 +19,53 @@
     margin: 10px;
 }
 
+
 .footer{
     position: fixed;
     bottom: 0%;
+    width: 100%;
+    align-items: center;
+    font-size: 50px;
+    color: black;
+}
+
+.searcharea{
+    top: 30px;
+    height: 6%;
+    width: 90%;
+}
+.click1{
+    width: 50%;
+    border-radius: 0px;
+    height: 100px;
+    background-color: #ff1f6fff;
+
+}
+.click2{
+    width: 50%;
+    border-radius: 0px;
+    height: 100px;
+    background-color: #ff8450ff;
+}
+list-item{
+    margin-top:30px;
+    border-radius: 20px;
+}
+.top-list-item {
+    width:100%;
+    background-color:#D4F2E7;
+}
+.item-group-child {
+    justify-content: center;
+    align-items: center;
+    width:100%;
+}
+
+.body{
+    top: 50px;
+    display: flex;
+}
+.body2{
+    top: 50px;
+    display: none;
 }

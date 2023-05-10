@@ -1,11 +1,64 @@
 <element name='listbutton' src='../../common/components/listbutton/listbutton.hml'></element>
+<element name='addbutton' src='../../common/components/addbutton/addbutton.hml'></element>
 <div class="container">
     <div class="header">
         <text class="title">基础管理</text>
     </div>
+<div class="search" id="search">
+    <search class="searcharea" id="searcharea" hint="请输入" value="{{searchValue}}" focusable="true" onchange="searchchange" @submit="submitColumn" searchbutton="搜索">
+    </search>
+</div>
+    <div class="body" id="body" style="height: 1200px;">
+        <list style="width: 90%;" id="mylist1">
+            <list-item-group for="listgroup in list" id="{{listgroup.value}}" ongroupcollapse="collapse" ongroupexpand="expand">
+                <list-item type="item" style="background-color: #ff128fff;height:145px;" primary="true">
+                    <div class="item-group-child">
+                        <text>供应商名称：{{listgroup.value}}</text>
+                    </div>
+                </list-item>
+                <list-item type="item" style="background-color:#ffe0e0e0;height:95px;">
+                    <div class="item-group-child">
+                        <text>编号：{{listgroup.value}}</text>
+                    </div>
+                </list-item>
+                <list-item type="item" style="background-color:#ffe0e0e0;height:95px;">
+                    <div class="item-group-child">
+                        <text>联系人：{{listgroup.value}}</text>
+                    </div>
+                </list-item>
+                <list-item type="item" style="background-color:#ffe0e0e0;height:95px;">
+                    <div class="item-group-child">
+                        <text>电话：{{listgroup.value}}</text>
+                    </div>
+                </list-item>
+                <list-item type="item" style="background-color:#ffe0e0e0;height:95px;">
+                    <div class="item-group-child">
+                        <text>地址：{{listgroup.value}}</text>
+                    </div>
+                </list-item>
 
-
+            </list-item-group>
+        </list>
+    </div>
+    <div class="body2" id="body2">
+        <list>
+            <list-item-group>
+                <list-item>
+                    <div>
+                        <image src="/common/img/admin.jpeg"></image>
+                    </div>
+                </list-item>
+            </list-item-group>
+        </list>
+    </div>
+    <addbutton page="index"></addbutton>
     <div class="footer">
-        <button style="width: 100%;height: 6%;border-radius: 0px;">首页</button>
+
+        <button class="click1" id="click1" onclick="click1">
+            供应商资料
+        </button>
+        <button class="click2" id="click2" onclick="click2">
+            防汛物资资料
+        </button>
     </div>
 </div>
