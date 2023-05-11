@@ -42,7 +42,7 @@ export default {
 
 
     },
-    logout(){
+    out(){
         router.push({url:"pages/index/index"});
     }
 

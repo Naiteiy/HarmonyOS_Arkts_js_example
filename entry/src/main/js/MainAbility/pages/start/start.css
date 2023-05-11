@@ -70,18 +70,19 @@
 }
 .my{
     display: none;
-
+    height: 100%;
 }
 .adminimg{
     position: absolute;
-    top:200px;
+    top:400px;
     margin: auto;
     width:300px;
+    height: 300px;
     left: 200px;
 }
 .textarea{
 
-    height: 400px;
+    height: 10000px;
     width: 800px;
 }
 .admintext{
@@ -91,7 +92,13 @@
     width: 100%;
     left: 50px;
 }
-
+.admintext2{
+    position: absolute;
+    font-size: 40px;
+    top: 100px;
+    width: 100%;
+    left: 0px;
+}
 .adminaccount1{
     position: absolute;
     font-size: 50px;
@@ -110,11 +117,16 @@
     align-items: center;
     text-align: center;
     position: absolute;
-    top: 1100px;
+
+    z-index: 10;
 }
 .logoutbutton{
+    z-index: 100;
+position: absolute;
 left: 200px;
     width: 300px;
     height: 100px;
     border-radius: 20px;
+    top: 70%;
+
 }

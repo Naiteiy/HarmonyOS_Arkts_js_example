@@ -8,34 +8,41 @@
     </listbutton>
     <listbutton class="button2" id="button2" imgsrc="/common/img/inandout.png" page="inout" buttontext="出入库管理">
     </listbutton>
-    <listbutton class="button3" id="button3" imgsrc="/common/img/analyse.png" page="basiccontroll" buttontext="物资分析">
+    <listbutton class="button3" id="button3" imgsrc="/common/img/analyse.png" page="basiccontroll"
+                buttontext="物资分析">
     </listbutton>
     <listbutton class="button4" id="button4" imgsrc="/common/img/list.png" page="sum" buttontext="报表管理">
     </listbutton>
     <div class="my" id="my">
         <image src="/common/img/admin.jpeg" class="adminimg"></image>
-<div class="tyextarea">
-       <div class="admintext"> <text>
-            个人信息
-        </text>
-       </div>
-        <div class="adminaccount">
-        <text class="adminaccount1">
-            账号管理
-        </text>
+        <div class="tyextarea">
+            <div class="admintext">
+                <text>
+                    个人信息
+                </text>
+                <text class="admintext2">
+                    admin
+                </text>
+            </div>
+            <div class="adminaccount">
+                <text class="adminaccount1">
+                    账号管理
+                </text>
 
 
-        <text class="adminaccount2">
-            为了安全，请联系数据库管理员修改账号！
-        </text></div>
-    <div class="logout">
-        <button onclick="logout" class="logoutbutton">退出登录</button>
-    </div>
-    </div>
+                <text class="adminaccount2">
+                    为了安全，请联系数据库管理员修改账号！
+                </text>
+            </div>
+            <div class="logout" onclick="out">
+                
+                <button class="logoutbutton" onclick="out">退出登录</button>
+            </div>
+        </div>
     </div>
     <div class="footer">
 
-       <div class="click1" id="click1" onclick="ifclick">
+        <div class="click1" id="click1" onclick="ifclick">
             <image class="click-img" src="{{ clickImage }}" focusable="true"></image>
         </div>
         <text class="text">首页</text>
@@ -45,5 +52,5 @@
         <text class="text1">我的</text>
     </div>
 
-,
+
 </div>
