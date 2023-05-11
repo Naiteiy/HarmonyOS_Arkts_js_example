@@ -36,7 +36,7 @@
                 <input class="input" type="text" placeholder="请输入供应商地址"></input>
             </div>
         </div>
-        <button class="save1" id="save1">保存</button>
+        <button class="save1" id="save1" onclick="save">保存</button>
     </div>
     <div class="body2" id="body2" style="height: 1200px;">
         <div class="input-item">
@@ -94,7 +94,7 @@
                 <input class="input" type="text" placeholder="请输入物资库存"></input>
             </div>
         </div>
-        <button class="save2" id="save2">保存</button>
+        <button class="save2" id="save2" onclick="save">保存</button>
     </div>
 
 

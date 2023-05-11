@@ -2,7 +2,7 @@
 <element name='addbutton' src='../../common/components/addbutton/addbutton.hml'></element>
 <div class="container">
     <div class="header">
-        <text class="title">基础管理</text>
+        <text class="title">物资分析</text>
     </div>
 <div class="search" id="search">
     <search class="searcharea" id="searcharea" hint="请输入" value="{{searchValue}}" focusable="true" onchange="searchchange" @submit="submitColumn" searchbutton="搜索">

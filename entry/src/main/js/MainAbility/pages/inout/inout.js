@@ -1,4 +1,5 @@
 import Prompt from '@system.prompt';
+import router from '@ohos.router'
 export default {
     data: {
         title: "",
@@ -9,9 +10,7 @@ export default {
         list: [],
         imgsrc:''
     },
-    searchchange(e){
-        this.searchvaule = e.vaule;
-    },
+
     click1() {
 
         if (this.isPressed = true) {
@@ -33,15 +32,15 @@ export default {
 
         }
     },
-    onInit() {
-        this.list = []
+    save(){
+        Prompt.showToast({
+            message: "保存成功",
+            duration: 500,
+        });
+        setTimeout(() => {
+            router.push({url:"pages/start/start"});
+        }, 500);
 
-        for (var i = 1; i <= 5; i++) {
-            var dataItem = {
-                value: '供应商' + i,
-            };
-            this.list.push(dataItem);
-        }
     }
 
 }

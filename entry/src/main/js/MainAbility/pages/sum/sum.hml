@@ -1,0 +1,146 @@
+<element name='listbutton' src='../../common/components/listbutton/listbutton.hml'></element>
+<element name='addbutton' src='../../common/components/addbutton/addbutton.hml'></element>
+<div class="container">
+    <div class="header">
+        <text class="title">报表管理</text>
+    </div>
+    <div class="search" id="search">
+        <search class="searcharea" id="searcharea" hint="请输入" value="{{searchValue}}" focusable="true" onchange="searchchange" @submit="submitColumn" searchbutton="搜索">
+        </search>
+    </div>
+    <div class="body" id="body" style="">
+        <list class="mylist2" id="mylist2" >
+
+            <list-item id="listitem2" class="listitem2">
+                <div>
+                    <image src="/common/img/admin.jpeg" class="img"></image>
+                    <text class="itemname" id="itemname">
+                        物品1
+                    </text>
+                    <text class="itemid" id="id">
+                        入库数量：xxx
+                    </text>
+
+                </div>
+            </list-item>
+
+        </list>
+        <list class="mylist2" id="mylist2" >
+
+            <list-item id="listitem2" class="listitem2">
+                <div>
+                    <image src="/common/img/admin.jpeg" class="img"></image>
+                    <text class="itemname" id="itemname">
+                        物品2
+                    </text>
+                    <text class="itemid" id="id">
+                        入库数量：xxx
+                    </text>
+                </div>
+            </list-item>
+
+        </list>
+        <list class="mylist2" id="mylist2" >
+
+            <list-item id="listitem2" class="listitem2">
+                <div>
+                    <image src="/common/img/admin.jpeg" class="img"></image>
+                    <text class="itemname" id="itemname">
+                        物品3
+                    </text>
+                    <text class="itemid" id="id">
+                        入库数量：xxx
+                    </text>
+                </div>
+            </list-item>
+
+        </list>
+        <list class="mylist2" id="mylist2" >
+
+            <list-item id="listitem2" class="listitem2">
+                <div>
+                    <image src="/common/img/admin.jpeg" class="img"></image>
+                    <text class="itemname" id="itemname">
+                        物品4
+                    </text>
+                    <text class="itemid" id="id">
+                        入库数量：xxx
+                    </text>
+                </div>
+            </list-item>
+
+        </list>
+    </div>
+    <div class="body2" id="body2">
+        <list class="mylist2" id="mylist2" >
+
+            <list-item id="listitem2" class="listitem2">
+                <div>
+                    <image src="/common/img/admin.jpeg" class="img"></image>
+                    <text class="itemname" id="itemname">
+                        物品1
+                    </text>
+                    <text class="itemid" id="id">
+                        出库数量：xxx
+                    </text>
+                </div>
+            </list-item>
+
+        </list>
+        <list class="mylist2" id="mylist2" >
+
+            <list-item id="listitem2" class="listitem2">
+                <div>
+                    <image src="/common/img/admin.jpeg" class="img"></image>
+                    <text class="itemname" id="itemname">
+                        物品2
+                    </text>
+                    <text class="itemid" id="id">
+                        出库数量：xxx
+                    </text>
+                </div>
+            </list-item>
+
+        </list>
+        <list class="mylist2" id="mylist2" >
+
+            <list-item id="listitem2" class="listitem2">
+                <div>
+                    <image src="/common/img/admin.jpeg" class="img"></image>
+                    <text class="itemname" id="itemname">
+                        物品3
+                    </text>
+                    <text class="itemid" id="id">
+                        出库数量：xxx
+                    </text>
+                </div>
+            </list-item>
+
+        </list>
+        <list class="mylist2" id="mylist2" >
+
+            <list-item id="listitem2" class="listitem2">
+                <div>
+                    <image src="/common/img/admin.jpeg" class="img"></image>
+                    <text class="itemname" id="itemname">
+                        物品4
+                    </text>
+                    <text class="itemid" id="id">
+                        出库数量：xxx
+                    </text>
+                </div>
+            </list-item>
+
+        </list>
+    </div>
+
+    <div class="footer">
+
+        <button class="click1" id="click1" onclick="click1">
+            入库信息统计
+        </button>
+        <button class="click2" id="click2" onclick="click2">
+            出库信息统计
+        </button>
+    </div>
+</div>

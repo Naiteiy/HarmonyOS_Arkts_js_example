@@ -56,7 +56,8 @@
           "pages/basiccontroll/basiccontroll",
           "pages/my/my",
           "pages/inout/inout",
-          "pages/basicadd/basicadd"
+          "pages/basicadd/basicadd",
+          "pages/sum/sum"
         ],
         "name": ".MainAbility",
         "window": {

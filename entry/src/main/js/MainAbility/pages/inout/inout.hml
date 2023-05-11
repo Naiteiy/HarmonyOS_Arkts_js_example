@@ -2,115 +2,108 @@
 <element name='addbutton' src='../../common/components/addbutton/addbutton.hml'></element>
 <div class="container">
     <div class="header">
-        <text class="title">基础管理</text>
+        <text class="title">出入库管理</text>
     </div>
-    <div class="search" id="search">
-        <search class="searcharea" id="searcharea" hint="请输入" value="{{searchValue}}" focusable="true" onchange="searchchange" @submit="submitColumn" searchbutton="搜索">
-        </search>
-    </div>
+
     <div class="body" id="body" style="height: 1200px;">
-        <list style="width: 90%;" id="mylist1">
-            <list-item-group for="listgroup in list" id="{{listgroup.value}}" ongroupcollapse="collapse" ongroupexpand="expand">
-                <list-item type="item" style="background-color: #ff128fff;height:145px;" primary="true">
-                    <div class="item-group-child">
-                        <text>供应商名称：{{listgroup.value}}</text>
-                    </div>
-                </list-item>
-                <list-item type="item" style="background-color:#ffe0e0e0;height:95px;">
-                    <div class="item-group-child">
-                        <text>编号：{{listgroup.value}}</text>
-                    </div>
-                </list-item>
-                <list-item type="item" style="background-color:#ffe0e0e0;height:95px;">
-                    <div class="item-group-child">
-                        <text>联系人：{{listgroup.value}}</text>
-                    </div>
-                </list-item>
-                <list-item type="item" style="background-color:#ffe0e0e0;height:95px;">
-                    <div class="item-group-child">
-                        <text>电话：{{listgroup.value}}</text>
-                    </div>
-                </list-item>
-                <list-item type="item" style="background-color:#ffe0e0e0;height:95px;">
-                    <div class="item-group-child">
-                        <text>地址：{{listgroup.value}}</text>
-                    </div>
-                </list-item>
-
-            </list-item-group>
-        </list>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">名称</text>
+                <input class="input" type="text" placeholder="请输入物资名称"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">时间</text>
+                <input class="input" type="text" placeholder="请输入入库时间"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">单号</text>
+                <input class="input" type="text" placeholder="请输入入库单号"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">供应商</text>
+                <input class="input" type="text" placeholder="请输入供应商名称"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">单位</text>
+                <input class="input" type="text" placeholder="请输入计量单位"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">数量</text>
+                <input class="input" type="text" placeholder="请输入入库数量"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">单价</text>
+                <input class="input" type="text" placeholder="请输入单价"></input>
+            </div>
+        </div>
+        <button class="save1" id="save1" onclick="save">保存</button>
     </div>
-    <div class="body2" id="body2">
-        <list class="mylist2" id="mylist2" >
-
-            <list-item id="listitem2" class="listitem2">
-                <div>
-                    <image src="/common/img/admin.jpeg" class="img"></image>
-                    <text class="itemname" id="itemname">
-                        物品1
-                    </text>
-                    <text class="itemid" id="id">
-                        物品编号：xxx
-                    </text>
-                </div>
-            </list-item>
-
-        </list>
-        <list class="mylist2" id="mylist2" >
-
-            <list-item id="listitem2" class="listitem2">
-                <div>
-                    <image src="/common/img/admin.jpeg" class="img"></image>
-                    <text class="itemname" id="itemname">
-                        物品2
-                    </text>
-                    <text class="itemid" id="id">
-                        物品编号：xxx
-                    </text>
-                </div>
-            </list-item>
-
-        </list>
-        <list class="mylist2" id="mylist2" >
-
-            <list-item id="listitem2" class="listitem2">
-                <div>
-                    <image src="/common/img/admin.jpeg" class="img"></image>
-                    <text class="itemname" id="itemname">
-                        物品3
-                    </text>
-                    <text class="itemid" id="id">
-                        物品编号：xxx
-                    </text>
-                </div>
-            </list-item>
-
-        </list>
-        <list class="mylist2" id="mylist2" >
-
-            <list-item id="listitem2" class="listitem2">
-                <div>
-                    <image src="/common/img/admin.jpeg" class="img"></image>
-                    <text class="itemname" id="itemname">
-                        物品4
-                    </text>
-                    <text class="itemid" id="id">
-                        物品编号：xxx
-                    </text>
-                </div>
-            </list-item>
-
-        </list>
+    <div class="body2" id="body2" style="height: 1200px;">
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">名称</text>
+                <input class="input" type="text" placeholder="请输入物资名称"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">时间</text>
+                <input class="input" type="text" placeholder="请输入出库时间"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">单号</text>
+                <input class="input" type="text" placeholder="请输入出库单号"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">单位</text>
+                <input class="input" type="text" placeholder="请输入领用单位"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">数量</text>
+                <input class="input" type="text" placeholder="请输入出库数量"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">用途</text>
+                <input class="input" type="text" placeholder="请输入物资用途"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">地点</text>
+                <input class="input" type="text" placeholder="请输入运送地点"></input>
+            </div>
+        </div>
+        <button class="save2" id="save2" onclick="save">保存</button>
     </div>
-    <addbutton page="basicadd"></addbutton>
+
 
     <div class="footer">
 
         <button class="click1" id="click1" onclick="click1">
-            供应商资料
+            入库
         </button>
         <button class="click2" id="click2" onclick="click2">
-            防汛物资资料
+            出库
         </button>
     </div>
 </div>

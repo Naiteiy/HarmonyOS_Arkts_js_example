@@ -4,13 +4,13 @@
         <text class="title">防汛物资管理信息系统</text>
     </div>
 
-    <listbutton class="button1" id="button1" imgsrc="/common/img/basic.png" page="basiccontroll" buttontext="基础管理">
+    <listbutton class="button1" id="button1" imgsrc="/common/img/basic.png" page="basicadd" buttontext="基础管理">
     </listbutton>
-    <listbutton class="button2" id="button2" imgsrc="/common/img/inandout.png" page="index" buttontext="出入库管理">
+    <listbutton class="button2" id="button2" imgsrc="/common/img/inandout.png" page="inout" buttontext="出入库管理">
     </listbutton>
-    <listbutton class="button3" id="button3" imgsrc="/common/img/analyse.png" page="index" buttontext="数据分析">
+    <listbutton class="button3" id="button3" imgsrc="/common/img/analyse.png" page="basiccontroll" buttontext="物资分析">
     </listbutton>
-    <listbutton class="button4" id="button4" imgsrc="/common/img/list.png" page="index" buttontext="报表管理">
+    <listbutton class="button4" id="button4" imgsrc="/common/img/list.png" page="sum" buttontext="报表管理">
     </listbutton>
     <div class="my" id="my">
         <image src="/common/img/admin.jpeg" class="adminimg"></image>
