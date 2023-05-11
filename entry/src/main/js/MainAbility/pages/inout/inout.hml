@@ -1,14 +1,116 @@
-<list style="width: 100%;" id="mylist">
-    <list-item-group for="listgroup in list" id="{{listgroup.value}}" ongroupcollapse="collapse" ongroupexpand="expand">
-        <list-item type="item" style="background-color:#FFF0F5;height:95px;">
-            <div class="item-group-child">
-                <text>One---{{listgroup.value}}</text>
-            </div>
-        </list-item>
-        <list-item type="item" style="background-color: #87CEFA;height:145px;" primary="true">
-            <div class="item-group-child">
-                <text>Primary---{{listgroup.value}}</text>
-            </div>
-        </list-item>
-    </list-item-group>
-</list>
+<element name='listbutton' src='../../common/components/listbutton/listbutton.hml'></element>
+<element name='addbutton' src='../../common/components/addbutton/addbutton.hml'></element>
+<div class="container">
+    <div class="header">
+        <text class="title">基础管理</text>
+    </div>
+    <div class="search" id="search">
+        <search class="searcharea" id="searcharea" hint="请输入" value="{{searchValue}}" focusable="true" onchange="searchchange" @submit="submitColumn" searchbutton="搜索">
+        </search>
+    </div>
+    <div class="body" id="body" style="height: 1200px;">
+        <list style="width: 90%;" id="mylist1">
+            <list-item-group for="listgroup in list" id="{{listgroup.value}}" ongroupcollapse="collapse" ongroupexpand="expand">
+                <list-item type="item" style="background-color: #ff128fff;height:145px;" primary="true">
+                    <div class="item-group-child">
+                        <text>供应商名称：{{listgroup.value}}</text>
+                    </div>
+                </list-item>
+                <list-item type="item" style="background-color:#ffe0e0e0;height:95px;">
+                    <div class="item-group-child">
+                        <text>编号：{{listgroup.value}}</text>
+                    </div>
+                </list-item>
+                <list-item type="item" style="background-color:#ffe0e0e0;height:95px;">
+                    <div class="item-group-child">
+                        <text>联系人：{{listgroup.value}}</text>
+                    </div>
+                </list-item>
+                <list-item type="item" style="background-color:#ffe0e0e0;height:95px;">
+                    <div class="item-group-child">
+                        <text>电话：{{listgroup.value}}</text>
+                    </div>
+                </list-item>
+                <list-item type="item" style="background-color:#ffe0e0e0;height:95px;">
+                    <div class="item-group-child">
+                        <text>地址：{{listgroup.value}}</text>
+                    </div>
+                </list-item>
+
+            </list-item-group>
+        </list>
+    </div>
+    <div class="body2" id="body2">
+        <list class="mylist2" id="mylist2" >
+
+            <list-item id="listitem2" class="listitem2">
+                <div>
+                    <image src="/common/img/admin.jpeg" class="img"></image>
+                    <text class="itemname" id="itemname">
+                        物品1
+                    </text>
+                    <text class="itemid" id="id">
+                        物品编号：xxx
+                    </text>
+                </div>
+            </list-item>
+
+        </list>
+        <list class="mylist2" id="mylist2" >
+
+            <list-item id="listitem2" class="listitem2">
+                <div>
+                    <image src="/common/img/admin.jpeg" class="img"></image>
+                    <text class="itemname" id="itemname">
+                        物品2
+                    </text>
+                    <text class="itemid" id="id">
+                        物品编号：xxx
+                    </text>
+                </div>
+            </list-item>
+
+        </list>
+        <list class="mylist2" id="mylist2" >
+
+            <list-item id="listitem2" class="listitem2">
+                <div>
+                    <image src="/common/img/admin.jpeg" class="img"></image>
+                    <text class="itemname" id="itemname">
+                        物品3
+                    </text>
+                    <text class="itemid" id="id">
+                        物品编号：xxx
+                    </text>
+                </div>
+            </list-item>
+
+        </list>
+        <list class="mylist2" id="mylist2" >
+
+            <list-item id="listitem2" class="listitem2">
+                <div>
+                    <image src="/common/img/admin.jpeg" class="img"></image>
+                    <text class="itemname" id="itemname">
+                        物品4
+                    </text>
+                    <text class="itemid" id="id">
+                        物品编号：xxx
+                    </text>
+                </div>
+            </list-item>
+
+        </list>
+    </div>
+    <addbutton page="basicadd"></addbutton>
+
+    <div class="footer">
+
+        <button class="click1" id="click1" onclick="click1">
+            供应商资料
+        </button>
+        <button class="click2" id="click2" onclick="click2">
+            防汛物资资料
+        </button>
+    </div>
+</div>

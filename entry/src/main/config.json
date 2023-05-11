@@ -55,7 +55,8 @@
           "common/components/addbutton/addbutton",
           "pages/basiccontroll/basiccontroll",
           "pages/my/my",
-          "pages/inout/inout"
+          "pages/inout/inout",
+          "pages/basicadd/basicadd"
         ],
         "name": ".MainAbility",
         "window": {

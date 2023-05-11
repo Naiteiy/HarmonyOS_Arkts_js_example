@@ -6,7 +6,8 @@ export default {
         isPressed: true,
         isPressed1:false,
         direction: 'column',
-        list: []
+        list: [],
+        imgsrc:''
     },
     searchchange(e){
         this.searchvaule = e.vaule;
@@ -19,9 +20,7 @@ export default {
             this.isPressed1 = false;
             this.$element('body').setStyle('display','flex');
             this.$element('body2').setStyle('display','none');
-            this.$element('search').setStyle('display','flex');
-
-        }
+}
     },
     click2() {
 
@@ -30,8 +29,9 @@ export default {
             this.isPressed = false;
             this.isPressed1 = true;
             this.$element('body').setStyle('display','none');
-   }this.$element('body2').setStyle('display','flex');
-        this.$element('search').setStyle('display','none');
+   this.$element('body2').setStyle('display','flex');
+
+        }
     },
     onInit() {
         this.list = []

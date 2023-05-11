@@ -41,17 +41,69 @@
         </list>
     </div>
     <div class="body2" id="body2">
-        <list>
-            <list-item-group>
-                <list-item>
+        <list class="mylist2" id="mylist2" >
+
+                <list-item id="listitem2" class="listitem2">
                     <div>
-                        <image src="/common/img/admin.jpeg"></image>
+                        <image src="/common/img/admin.jpeg" class="img"></image>
+                        <text class="itemname" id="itemname">
+                            物品1
+                        </text>
+                        <text class="itemid" id="id">
+                            物品编号：xxx
+                        </text>
                     </div>
                 </list-item>
-            </list-item-group>
+
+        </list>
+        <list class="mylist2" id="mylist2" >
+
+            <list-item id="listitem2" class="listitem2">
+                <div>
+                    <image src="/common/img/admin.jpeg" class="img"></image>
+                    <text class="itemname" id="itemname">
+                        物品2
+                    </text>
+                    <text class="itemid" id="id">
+                        物品编号：xxx
+                    </text>
+                </div>
+            </list-item>
+
+        </list>
+        <list class="mylist2" id="mylist2" >
+
+            <list-item id="listitem2" class="listitem2">
+                <div>
+                    <image src="/common/img/admin.jpeg" class="img"></image>
+                    <text class="itemname" id="itemname">
+                        物品3
+                    </text>
+                    <text class="itemid" id="id">
+                        物品编号：xxx
+                    </text>
+                </div>
+            </list-item>
+
+        </list>
+        <list class="mylist2" id="mylist2" >
+
+            <list-item id="listitem2" class="listitem2">
+                <div>
+                    <image src="/common/img/admin.jpeg" class="img"></image>
+                    <text class="itemname" id="itemname">
+                        物品4
+                    </text>
+                    <text class="itemid" id="id">
+                        物品编号：xxx
+                    </text>
+                </div>
+            </list-item>
+
         </list>
     </div>
-    <addbutton page="index"></addbutton>
+    <addbutton page="basicadd"></addbutton>
+
     <div class="footer">
 
         <button class="click1" id="click1" onclick="click1">

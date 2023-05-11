@@ -1,0 +1,110 @@
+<element name='listbutton' src='../../common/components/listbutton/listbutton.hml'></element>
+<element name='addbutton' src='../../common/components/addbutton/addbutton.hml'></element>
+<div class="container">
+    <div class="header">
+        <text class="title">基础管理</text>
+    </div>
+
+    <div class="body" id="body" style="height: 1200px;">
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">名称</text>
+                <input class="input" type="text" placeholder="请输入供应商名称"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">编号</text>
+                <input class="input" type="text" placeholder="请输入供应商编号"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">联系人</text>
+                <input class="input" type="text" placeholder="请输入供应商负责人"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">电话</text>
+                <input class="input" type="text" placeholder="请输入负责人电话"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">地址</text>
+                <input class="input" type="text" placeholder="请输入供应商地址"></input>
+            </div>
+        </div>
+        <button class="save1" id="save1">保存</button>
+    </div>
+    <div class="body2" id="body2" style="height: 1200px;">
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">名称</text>
+                <input class="input" type="text" placeholder="请输入物资名称"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">代码</text>
+                <input class="input" type="text" placeholder="请输入物资代码"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">类别</text>
+                <input class="input" type="text" placeholder="请输入物资类别"></input>
+            </div>
+        </div>
+        <div class="inputitem">
+
+                <text class="input-title">类别</text>
+                <div class="radio-div" style="flex-wrap: wrap;width: 85%;">
+                    <text>基础物资</text>
+                    <input class="radio" type="radio" checked='true' name="radio" value="radio1"></input>
+                    <text>应急设备</text>
+                    <input class="radio" type="radio" checked='false' name="radio" value="radio2"></input>
+                    <text>医疗救护</text>
+                    <input class="radio" type="radio" checked='false' name="radio" value="radio2"></input>
+                    <text>食品劳保</text>
+                    <input class="radio" type="radio" checked='false' name="radio" value="radio2"></input>
+                    <text>工程车辆</text>
+                    <input class="radio" type="radio" checked='false' name="radio" value="radio2"></input>
+                    <text>应急特种装备</text>
+                    <input class="radio" type="radio" checked='false' name="radio" value="radio2"></input>
+                </div>
+
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">名称</text>
+                <input class="input" type="text" placeholder="请输入物资名称"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">单位</text>
+                <input class="input" type="text" placeholder="请输入物资单位"></input>
+            </div>
+        </div>
+        <div class="input-item">
+            <div class="color">
+                <text class="input-title">库存</text>
+                <input class="input" type="text" placeholder="请输入物资库存"></input>
+            </div>
+        </div>
+        <button class="save2" id="save2">保存</button>
+    </div>
+
+
+    <div class="footer">
+
+        <button class="click1" id="click1" onclick="click1">
+            添加供应商
+        </button>
+        <button class="click2" id="click2" onclick="click2">
+            添加物资资料
+        </button>
+    </div>
+</div>

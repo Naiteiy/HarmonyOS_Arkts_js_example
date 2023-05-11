@@ -29,11 +29,6 @@
     color: black;
 }
 
-.searcharea{
-    top: 30px;
-    height: 6%;
-    width: 90%;
-}
 .click1{
     width: 50%;
     border-radius: 0px;
@@ -47,50 +42,53 @@
     height: 100px;
     background-color: #ff8450ff;
 }
-list-item{
-    margin-top:30px;
-    border-radius: 20px;
-}
-.top-list-item {
-    width:100%;
-    background-color:#D4F2E7;
-}
-.item-group-child {
-    justify-content: center;
-    align-items: center;
-    width:100%;
-}
-
 .body{
     top: 50px;
     display: flex;
+    flex-wrap: wrap;
 }
 .body2{
     top: 50px;
     display: none;
     flex-wrap: wrap;
 }
-.mylist2{
-    background-color: #ffe7e7e7;
-    height: 15%;
-    width: 90%;
+.input-item{
+    width: 100%;
+    height: 10%;
+    margin-top: 10px;
+
+}
+.color {
+    margin: 0 4% 0 4% ;
+    width: 92%;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.input-title {
+    color: #121317;
+}
+.input {
+    width: 80%;
+    left: 10%;
+    background-color: white;
+}
+.radio-div{
+    left: 10%;
+    font-size: 25px;
+}
+.radio{
+
+}
+.save1{
+    width: 300px;
+    height: 80px;
+    left: 30%;
     border-radius: 20px;
-    align-items: center;
-    left: 5%;
-    margin-bottom: 10%;
-    margin-top: 10%;
+    top: 20%;
 }
-.img{
-    width: 200px;
-    height: 200px;
-    top:-5%
-}
-.itemname{
-    left: 20%;
-    font-size: 40px;
-    top:-20%;
-}
-.itemid{
-    left: -38%;
-    top:12%;
+.save2{
+    width: 300px;
+    height: 80px;
+    left: 30%;
+    border-radius: 20px;
+
 }

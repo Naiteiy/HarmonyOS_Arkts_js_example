@@ -9,9 +9,7 @@ export default {
         list: [],
         imgsrc:''
     },
-    searchchange(e){
-        this.searchvaule = e.vaule;
-    },
+
     click1() {
 
         if (this.isPressed = true) {
@@ -31,16 +29,6 @@ export default {
             this.$element('body').setStyle('display','none');
             this.$element('body2').setStyle('display','flex');
 
-        }
-    },
-    onInit() {
-        this.list = []
-
-        for (var i = 1; i <= 5; i++) {
-            var dataItem = {
-                value: '供应商' + i,
-            };
-            this.list.push(dataItem);
         }
     }
 
